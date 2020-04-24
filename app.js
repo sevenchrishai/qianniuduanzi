@@ -1,15 +1,11 @@
 //app.js
 App({
-
   // 全局数据对象(整个应用程序共享)
-
   globalData:{
     userInfo:null
   },
-
   // 应用程序全局方法
   fetchApi (api_url, callback) {
-
     wx.request({
       url: api_url,
       data: {},
@@ -21,16 +17,9 @@ App({
         callback(e)
       }
     })
-
   },
 
-  getDate(tm){ 
-    var tt= new Date(parseInt(tm) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ") 
-    return tt;
-  }, 
-
   // 生命周期方法
-
   onLaunch: function () {
     // 应用程序启动时触发一次
     console.log('App Launch')
