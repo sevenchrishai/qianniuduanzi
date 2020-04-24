@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/joke/joke",
     "pages/pic/pic",
+    "pages/joke/joke",
     "pages/collection/collection",
     "pages/my/my",
     "pages/duanzi/duanzi"
@@ -11,24 +11,30 @@
     "backgroundTextStyle": "light",
     "navigationBarTitleText": "芊芊牛牛",
     "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#EEEEEE",
+    "backgroundColor": "#EEEEEE"
   },
   "tabBar": {
     "color": "#7A7E83",
     "selectedColor": "#1296db",
     "borderStyle": "white",
-    "backgroundColor": "#f9f9f9",
+    "backgroundColor": "#EEEEEE",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "笑话",
+        "text": "葫芦娃",
         "iconPath": "images/duanzi.png",
         "selectedIconPath": "images/duanzi-actived.png"
       },
       {
         "pagePath": "pages/pic/pic",
-        "text": "趣图",
+        "text": "阿童木",
+        "iconPath": "images/mumu.png",
+        "selectedIconPath": "images/mumu-actived.png"
+      },
+      {
+        "pagePath": "pages/joke/joke",
+        "text": "匹诺曹",
         "iconPath": "images/pic.png",
         "selectedIconPath": "images/pic-actived.png"
       }

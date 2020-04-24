@@ -2,7 +2,8 @@ var app = getApp();
 
 var apiKey = '5717fd14e8aa4ab4bc5e30180ce9372d';
 
-const random_url = require('../../config').randomUrl;
+const api = require('../api/api.js')
+const random_url = api.randomUrl
 
 const duration = 2000;
 

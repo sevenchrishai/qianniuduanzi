@@ -1,8 +1,9 @@
 //获取应用实例 
 var app = getApp()
 var apiKey = '5717fd14e8aa4ab4bc5e30180ce9372d';
-const random_url = require('../../config').randomUrl;
-const newest_url = require('../../config').newestPicUrl;
+const api = require('../api/api.js')
+const random_url = api.randomUrl
+const newest_url = api.newestJokeUrl
 Page({
   data: {
     // 页面配置  

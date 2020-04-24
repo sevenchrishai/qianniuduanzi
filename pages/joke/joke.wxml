@@ -1,5 +1,5 @@
 <!-- 段子 -->
-<import src="../../template/rec_index.wxml" />
+<import src="../template/template.wxml" />
 <view class="nav">
 	<navigator url="../index/index">
 		<text class="nav-list">推荐</text>

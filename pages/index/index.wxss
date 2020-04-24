@@ -2,32 +2,33 @@ page {
 	background-color: #eee;
 }
 .swiper-tab{
-  width: 100%; 
-  border-top: 1rpx solid #f2f2f2;
+  width: 100%;
+  border-top: 1rpx solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   text-align: center; 
-  line-height: 80rpx;
-  background-color: #f9f9f9;
-  position: absolute;
+  line-height: 50rpx;
+  background-color: #ffffff;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .swiper-tab-list{
-  font-size: 30rpx; 
+  font-size: 26rpx;
   display: inline-block; 
-  width: 50%; 
-  color: #7A7E83; 
+  width: 20%;
+  color: #333333;
 }
 .on{
-  color: #1296db; 
-  border-bottom: 5rpx solid #1296db;
+  color: darkorange;
+  border-bottom: 2px solid darkorange;
 }
 .swiper-box{
   display: block;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  margin-top: 80rpx;
+  margin-top: 50rpx;
 }
 .swiper-box view{ 
-  text-align: center; 
 }

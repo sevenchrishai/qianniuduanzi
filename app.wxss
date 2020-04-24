@@ -59,6 +59,6 @@ navigator {
 }
 .body-img {
 	margin-top: 8px;
-	display: block; 
+	display: block;
 	width: 100%;
 }

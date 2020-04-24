@@ -1,4 +1,4 @@
-<import src="../../template/rec_index.wxml" />
+<import src="../template/template.wxml" />
 <!-- 趣图 -->
 <view class="swiper-tab">
    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">推荐</view>
