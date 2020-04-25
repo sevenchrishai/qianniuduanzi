@@ -28,7 +28,7 @@ Page({
     swiperChange: function (e) {
         console.log('滑动切换',e)
         var self = this;
-        if (e.detail.current) {
+        if (e.detail.hasOwnProperty('current')) {
             self.setData({
                 currentTab: e.detail.current,
                 type: self.data.typeArr[e.detail.current],
