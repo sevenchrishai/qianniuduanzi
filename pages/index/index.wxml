@@ -1,5 +1,4 @@
 <import src="../template/template.wxml"/>
-<!-- 笑话 -->
 <view class="swiper-tab">
     <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="switchNav">推荐</view>
     <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="switchNav">文字</view>
@@ -64,5 +63,3 @@
         </scroll-view>
     </swiper-item>
 </swiper>
-
-<!-- <template is="rec_list" data="{{req}}" /> -->

@@ -5,6 +5,7 @@ App({
         userInfo: null,
         JHApiKey: '5717fd14e8aa4ab4bc5e30180ce9372d',
         JDApiKey: '846ff9e774b8cbbb29bf536d4a04b06d',
+        JDshowapi_sign: 'bd0592992b4d4050bfc927fe7a4db9f3',
     },
     // 应用程序全局方法
     fetchApi(api_url, callback) {

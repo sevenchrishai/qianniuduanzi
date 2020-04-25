@@ -14,17 +14,6 @@ page{
     left: 0;
     z-index: 2;
 }
-.swiper-tab-list{
-    font-size: 26rpx;
-    font-weight: bold;
-    display: inline-block;
-    width: 20%;
-    color: #333333;
-}
-.on{
-    color: darkorange;
-    border-bottom: 2px solid darkorange;
-}
 .swiper-box{
     display: block;
     height: 100%;
@@ -41,7 +30,7 @@ page{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     width: 60rpx;
     height: 60rpx;
     border-radius: 10rpx;
@@ -63,7 +52,7 @@ page{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     width: 60rpx;
     height: 60rpx;
     border-radius: 10rpx;

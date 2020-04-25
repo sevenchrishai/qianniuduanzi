@@ -68,7 +68,7 @@
 		</view>
 		<view class="item-body">
 			<view>{{item.text}}</view>
-			<video class="body-img" src="{{item.video}}"></video>
+			<video wx:if="{{item.video}}" class="body-img" src="{{item.video}}"></video>
 		</view>
 		<block wx:if="{{item.top_comments_content}}">
 			<view class="item-comment">
@@ -81,8 +81,54 @@
 	</view>
 </template>
 
-<template name="rec_list">
-	<scroll class="scroll-box" scroll-y="true" upper-threshold="50" lower-threshold="50">
-		<template is="{{item.url ? 'pic_tpl' : 'joke_tpl'}}" data="{{item}}" wx:for="{{req}}"></template>
-	</scroll>
+<!-- JD文本 -->
+<template name="JD_joke_tpl">
+	<view class="list-item">
+		<view class="item-header-jd">
+			<view class="header-title">
+				<view class="header-name-jd">{{item.title}}</view>
+				<view class="header-time-jd">{{filter.dateFormatStr(item.ct)}}</view>
+			</view>
+		</view>
+		<view class="item-body">
+			<text>{{item.text}}</text>
+		</view>
+	</view>
+</template>
+
+<!-- JD图片 -->
+<template name="JD_pic_tpl">
+	<view class="list-item">
+		<view class="item-header">
+			<view class="header-title">
+				<view class="header-name">{{item.title}}</view>
+				<view class="header-time">{{filter.dateFormatStr(item.ct)}}</view>
+			</view>
+		</view>
+		<view class="item-body">
+			<view>{{item.text}}</view>
+			<image class="body-img" wx:if="{{item.img}}" src="{{item.img || '../../images/mumu-actived.png'}}"
+				   lazy-load="true" mode="widthFix"></image>
+		</view>
+	</view>
+</template>
+
+<!-- JH段子 -->
+<template name="JH_joke_tpl">
+	<view class="list-item">
+		<view class="item-body">
+			<text>{{item.content}}</text>
+		</view>
+	</view>
+</template>
+
+<!-- JH图文 -->
+<template name="JH_pic_tpl">
+	<view class="list-item">
+		<view class="item-body">
+			<view>{{item.content}}</view>
+			<image class="body-img" wx:if="{{item.url}}" src="{{item.url || '../../images/pic-actived.png'}}"
+				   lazy-load="true" mode="widthFix"></image>
+		</view>
+	</view>
 </template>
