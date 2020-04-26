@@ -1,0 +1,134 @@
+
+<wxs src="../../utils/filter.wxs" module="filter" />
+<!-- 文本 -->
+<template name="joke_tpl">
+	<view class="list-item">
+		<view class="item-header">
+			<view class="header-img">
+				<image src="{{item.header || '../../images/duanzi-actived.png'}}" lazy-load="true"></image>
+			</view>
+			<view class="header-title">
+				<view class="header-name">{{item.name}}</view>
+				<view class="header-time">{{filter.dateFormatStr(item.passtime)}}</view>
+			</view>
+		</view>
+		<view class="item-body">
+			<text>{{item.text}}</text>
+		</view>
+		<block wx:if="{{item.top_comments_content}}">
+			<view class="item-comment">
+				<view>
+					<text class="godComment">神评</text>
+					<text>{{item.top_comments_content}}</text>
+				</view>
+			</view>
+		</block>
+	</view>
+</template>
+
+<!-- 图片 -->
+<template name="pic_tpl">
+	<view class="list-item">
+		<view class="item-header">
+			<view class="header-img">
+				<image src="{{item.header || '../../images/duanzi-actived.png'}}" lazy-load="true"></image>
+			</view>
+			<view class="header-title">
+				<view class="header-name">{{item.name}}</view>
+				<view class="header-time">{{filter.dateFormatStr(item.passtime)}}</view>
+			</view>
+		</view>
+		<view class="item-body">
+			<view>{{item.text}}</view>
+			<image class="body-img" src="{{item.images || '../../images/duanzi-actived.png'}}"
+				   lazy-load="true" mode="widthFix"></image>
+		</view>
+		<block wx:if="{{item.top_comments_content}}">
+			<view class="item-comment">
+				<view>
+					<text class="godComment">神评</text>
+					<text>{{item.top_comments_content}}</text>
+				</view>
+			</view>
+		</block>
+	</view>
+</template>
+
+<!-- 视频 -->
+<template name="video_tpl">
+	<view class="list-item">
+		<view class="item-header">
+			<view class="header-img">
+				<image src="{{item.header || '../../images/duanzi-actived.png'}}" lazy-load="true"></image>
+			</view>
+			<view class="header-title">
+				<view class="header-name">{{item.name}}</view>
+				<view class="header-time">{{filter.dateFormatStr(item.passtime)}}</view>
+			</view>
+		</view>
+		<view class="item-body">
+			<view>{{item.text}}</view>
+			<video wx:if="{{item.video}}" class="body-img" src="{{item.video}}"></video>
+		</view>
+		<block wx:if="{{item.top_comments_content}}">
+			<view class="item-comment">
+				<view>
+					<text class="godComment">神评</text>
+					<text>{{item.top_comments_content}}</text>
+				</view>
+			</view>
+		</block>
+	</view>
+</template>
+
+<!-- JD文本 -->
+<template name="JD_joke_tpl">
+	<view class="list-item">
+		<view class="item-header-jd">
+			<view class="header-title">
+				<view class="header-name-jd">{{item.title}}</view>
+				<view class="header-time-jd">{{filter.dateFormatStr(item.ct)}}</view>
+			</view>
+		</view>
+		<view class="item-body">
+			<text>{{item.text}}</text>
+		</view>
+	</view>
+</template>
+
+<!-- JD图片 -->
+<template name="JD_pic_tpl">
+	<view class="list-item">
+		<view class="item-header">
+			<view class="header-title">
+				<view class="header-name">{{item.title}}</view>
+				<view class="header-time">{{filter.dateFormatStr(item.ct)}}</view>
+			</view>
+		</view>
+		<view class="item-body">
+			<view>{{item.text}}</view>
+			<image class="body-img" wx:if="{{item.img}}" src="{{item.img || '../../images/mumu-actived.png'}}"
+				   lazy-load="true" mode="widthFix"></image>
+		</view>
+	</view>
+</template>
+
+<!-- JH段子 -->
+<template name="JH_joke_tpl">
+	<view class="list-item">
+		<view class="item-body">
+			<text>{{item.content}}</text>
+		</view>
+	</view>
+</template>
+
+<!-- JH图文 -->
+<template name="JH_pic_tpl">
+	<view class="list-item">
+		<view class="item-body">
+			<view>{{item.content}}</view>
+			<image class="body-img" wx:if="{{item.url}}" src="{{item.url || '../../images/pic-actived.png'}}"
+				   lazy-load="true" mode="widthFix"></image>
+		</view>
+	</view>
+</template>

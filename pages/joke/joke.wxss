@@ -1,3 +1,11 @@
-page {
-	background-color: #eee;
+.swiper-tab-list{
+    font-size: 26rpx;
+    font-weight: bold;
+    display: inline-block;
+    width: 20%;
+    color: #333333;
+}
+.on{
+    color: #ff557a;
+    border-bottom: 2px solid #ff557a;
 }

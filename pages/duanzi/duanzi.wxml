@@ -1,4 +1,4 @@
-<import src="../../template/rec_index.wxml" />
+<import src="../template/template.wxml" />
 <view >
     <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
         <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">健康</view>

@@ -1,25 +1,65 @@
-<import src="../../template/rec_index.wxml" />
-<!-- 段子 -->
+<import src="../template/template.wxml"/>
 <view class="swiper-tab">
-   <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">推荐</view>
-   <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">最新</view>
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="switchNav">推荐</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="switchNav">文字</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="switchNav">图片</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="switchNav">GIF</view>
+    <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="switchNav">视频</view>
 </view>
-
-<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
-   <swiper-item>
-      <scroll-view scroll-y="true" class="scoll-h" >
-          <scroll class="scroll-box" scroll-y="true" upper-threshold="50" lower-threshold="50" >
-            <template is="joke_tpl" data="{{item}}" wx:for="{{req}}" />
-          </scroll>
-      </scroll-view>
-   </swiper-item>
-   <swiper-item>
-      <scroll-view scroll-y="true" class="scoll-h" >
-          <scroll class="scroll-box" scroll-y="true" upper-threshold="50" lower-threshold="50" >
-            <template is="joke_tpl" data="{{item}}" wx:for="{{req}}" />
-          </scroll>
-      </scroll-view>
-   </swiper-item>
+<view class="refresh" bindtap="refresh">
+    <image src="../../images/refresh.png"></image>
+</view>
+<view class="toTop" bindtap="toTop" wx:if="{{floorstatus}}">
+    <image src="../../images/toTop.png"></image>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-31}}px"
+        bindchange="swiperChange">
+    <!--推荐-->
+    <swiper-item>
+        <scroll-view scroll-y="true" class="scoll-h" upper-threshold="50" lower-threshold="50"
+                     bindscrolltolower="scrollToBottom" bindscroll="scrolltoupper"
+                     scroll-top='{{topNum}}'>
+            <block wx:for="{{hotDataList}}" wx:key="sid">
+                <template wx:if="{{item.type=='text'}}" is="joke_tpl" data="{{item}}"/>
+            </block>
+            <block wx:for="{{hotDataList}}" wx:key="sid">
+                <template wx:if="{{item.type=='image' || item.type=='gif'}}" is="pic_tpl" data="{{item}}"/>
+            </block>
+            <block wx:for="{{hotDataList}}" wx:key="sid">
+                <template wx:if="{{item.type=='video'}}" is="video_tpl" data="{{item}}"/>
+            </block>
+        </scroll-view>
+    </swiper-item>
+    <!--文本-->
+    <swiper-item>
+        <scroll-view scroll-y="true" class="scoll-h" upper-threshold="50" lower-threshold="50"
+                     bindscrolltolower="scrollToBottom" bindscroll="scrolltoupper"
+                     scroll-top='{{topNum}}'>
+            <template is="joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="sid"/>
+        </scroll-view>
+    </swiper-item>
+    <!--图片-->
+    <swiper-item>
+        <scroll-view scroll-y="true" class="scoll-h" upper-threshold="50" lower-threshold="50"
+                     bindscrolltolower="scrollToBottom" bindscroll="scrolltoupper"
+                     scroll-top='{{topNum}}'>
+            <template is="pic_tpl" data="{{item}}" wx:for="{{imageDataList}}" wx:key="sid"/>
+        </scroll-view>
+    </swiper-item>
+    <!--GIF-->
+    <swiper-item>
+        <scroll-view scroll-y="true" class="scoll-h" upper-threshold="50" lower-threshold="50"
+                     bindscrolltolower="scrollToBottom" bindscroll="scrolltoupper"
+                     scroll-top='{{topNum}}'>
+            <template is="pic_tpl" data="{{item}}" wx:for="{{gifDataList}}" wx:key="sid"/>
+        </scroll-view>
+    </swiper-item>
+    <!--视频-->
+    <swiper-item>
+        <scroll-view scroll-y="true" class="scoll-h" upper-threshold="50" lower-threshold="50"
+                     bindscrolltolower="scrollToBottom" bindscroll="scrolltoupper"
+                     scroll-top='{{topNum}}'>
+            <template is="video_tpl" data="{{item}}" wx:for="{{videoDataList}}" wx:key="sid"/>
+        </scroll-view>
+    </swiper-item>
 </swiper>
-
-<!-- <template is="rec_list" data="{{req}}" /> -->
