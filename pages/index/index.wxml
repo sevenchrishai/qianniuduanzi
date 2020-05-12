@@ -6,7 +6,7 @@
     <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="switchNav">GIF</view>
     <!--<view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="switchNav">视频</view>-->
 </view>
-<view class="refresh" bindtap="refresh">
+<view class="refresh" bindtap="refresh" wx:if="{{false}}">
     <image src="../../images/refresh.png"></image>
 </view>
 <view class="toTop" bindtap="toTop" wx:if="{{floorstatus}}">
