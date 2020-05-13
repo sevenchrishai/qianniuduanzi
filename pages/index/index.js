@@ -81,7 +81,7 @@ Page({
     switchNav: function (e) {
         console.log('点击tab',e)
         var self = this;
-        if (e.currentTarget.dataset.current) {
+        if (e.currentTarget.dataset.hasOwnProperty('current')) {
             if (this.data.currentTab == e.currentTarget.dataset.current) {
                 return false;
             } else {
