@@ -54,7 +54,7 @@
     display: block;
     margin-top: 10rpx;
     width: 100%;
-    height: auto;
+    height: 280rpx;
 }
 .item-comment{
     background-color: #f2f2f2;
