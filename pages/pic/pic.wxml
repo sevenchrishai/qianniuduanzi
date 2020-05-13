@@ -5,10 +5,80 @@
 <view class="toTop" bindtap="toTop" wx:if="{{floorstatus}}">
     <image src="../../images/toTop.png"></image>
 </view>
-<view class="scroll-box" style="height:{{winHeight}}px">
-    <scroll-view scroll-y="true" class="scoll-h" upper-threshold="50" lower-threshold="50"
-                 bindscrolltolower="scrollToBottom" bindscroll="scrolltoupper"
-                 scroll-top='{{topNum}}'>
-        <template is="JD_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="id"/>
+<view class="tab-container">
+    <scroll-view scroll-x="true" class="swiper-tab-scroll" scroll-with-animation="true">
+        <view class="swiper-tab-list {{currentTab==index ? 'on' : ''}}" data-current="{{index}}"
+              bindtap="switchNav" wx:for="{{newsChannelList}}" wx:key="index">{{item}}</view>
     </scroll-view>
 </view>
+<swiper current="{{currentTab}}" class="swiper-box-scroll" duration="300" style="height:{{winHeight-31}}px"
+        bindchange="swiperChange">
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList0}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList1}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList2}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList3}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList4}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList5}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList6}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList7}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList8}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList9}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList10}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList11}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList12}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList13}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList14}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList15}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+    <swiper-item class="swiper_item">
+        <template is="JD_news_tpl" data="{{item}}" wx:for="{{newsList16}}" wx:key="index"/>
+        <!--<template is="JH_joke_tpl" data="{{item}}" wx:for="{{textDataList}}" wx:key="hashId"/>-->
+    </swiper-item>
+</swiper>

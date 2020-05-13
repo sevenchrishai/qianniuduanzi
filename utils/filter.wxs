@@ -31,6 +31,19 @@ var dateFormatStr = function (dateStr) {
   }
   return result
 }
+var dateFormatUnixTime = function (time) {
+  var today = formatTime(getDate())
+  var date = formatTime(getDate(parseInt(time) * 1000))
+  var result = ''
+  if(today.year==date.year && today.monthDay==date.monthDay) {
+    result = '今天 '+date.hourMin
+  } else if(today.year==date.year && today.monthDay!=date.monthDay){
+    result = date.monthDay + ' '+date.hourMin
+  } else {
+    result = date.year + '-' + date.monthDay + ' ' +date.hourMin
+  }
+  return result
+}
 var moneyFormat = function (money) {
   return money.toFixed(2);
 }

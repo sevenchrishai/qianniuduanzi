@@ -115,22 +115,39 @@
 	</view>
 </template>
 
-<!-- JH段子 -->
-<template name="JH_joke_tpl">
-	<view class="list-item">
-		<view class="item-body">
-			<text>{{item.content}}</text>
-		</view>
-	</view>
+<!-- JD新闻 -->
+<template name="JD_news_tpl">
+    <view class="list-item">
+        <view class="item-header">
+            <view class="header-title">
+                <view class="header-name">{{item.title}}</view>
+                <view class="header-content">
+                    <view class="header-time">{{filter.dateFormatStr(item.time)}}</view>
+                    <view class="header-src">{{item.src}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="item-body">
+            <view>{{item.text}}</view>
+            <image class="body-img" bindtap="previewImage" data-current="{{item.pic}}"
+                   wx:if="{{item.pic}}" src="{{item.pic || '../../images/404.png'}}" lazy-load="true" mode="aspectFill"></image>
+        </view>
+    </view>
 </template>
 
 <!-- JH图文 -->
 <template name="JH_pic_tpl">
-	<view class="list-item">
-		<view class="item-body">
-			<view>{{item.content}}</view>
-			<image class="body-img" bindtap="previewImage" data-current="{{item.url}}"
-				   wx:if="{{item.url}}" src="{{item.url || '../../images/404.png'}}" lazy-load="true" mode="aspectFill"></image>
-		</view>
-	</view>
+    <view class="list-item">
+        <view class="item-header">
+            <view class="header-title">
+                <view class="header-name" wx:if="{{item.url}}">{{item.content}}</view>
+                <view class="header-time">{{filter.dateFormatUnixTime(item.unixtime)}}</view>
+            </view>
+        </view>
+        <view class="item-body">
+            <view wx:if="{{!item.url}}">{{item.content}}</view>
+            <image class="body-img" bindtap="previewImage" data-current="{{item.url}}"
+                   wx:if="{{item.url}}" src="{{item.url || '../../images/404.png'}}" lazy-load="true" mode="aspectFill"></image>
+        </view>
+    </view>
 </template>

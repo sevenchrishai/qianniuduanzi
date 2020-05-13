@@ -7,11 +7,9 @@ const jokeUrl = api.JHRandUrl
 
 Page({
     data: {
-        // 页面配置
-        winWidth: 0,
+        winWidth: 0, // 页面配置
         winHeight: 0,
-        // tab切换
-        currentTab: 0,
+        currentTab: 0, // tab切换
         type: '',
         typeArr: ['','pic'],
         textDataList: [],
@@ -44,7 +42,7 @@ Page({
     switchNav: function (e) {
         console.log('点击tab',e)
         var self = this;
-        if (e.currentTarget.dataset.current) {
+        if (e.currentTarget.dataset.hasOwnProperty('current')) {
             if (this.data.currentTab == e.currentTarget.dataset.current) {
                 return false;
             } else {
@@ -52,18 +50,6 @@ Page({
                     currentTab: e.currentTarget.dataset.current,
                     type: self.data.typeArr[parseInt(e.currentTarget.dataset.current)]
                 })
-                switch (self.data.type) {
-                    case 'pic':
-                        if (self.data.imageDataList.length == 0) {
-                            self.requestData('imageDataList');
-                        }
-                        break
-                    default:
-                        if (self.data.textDataList.length == 0) {
-                            self.requestData('textDataList');
-                        }
-                        break
-                }
             }
         }
     },

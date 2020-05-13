@@ -1,17 +1,37 @@
-.scroll-box{
-    display: block;
-    height: 100%;
+.tab-container{
     width: 100%;
-    overflow: hidden;
+    background-color: #ffffff;
+    padding: 0 20rpx;
+    border-bottom: 1px solid #eeeeee;
+}
+.swiper-tab-scroll{
+    width: 100%;
+    white-space: nowrap;
 }
 .swiper-tab-list{
     font-size: 26rpx;
     font-weight: bold;
     display: inline-block;
-    width: 33.33%;
+    width: 120rpx;
     color: #333333;
+    text-align: center;
+    line-height: 50rpx;
 }
 .on{
     color: #60a8ff;
     border-bottom: 2px solid #60a8ff;
+}
+.swiper-box-scroll{
+
+}
+.swiper_item{
+    overflow-y: scroll;
+}
+/**
+去除横向滚动条
+*/
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
 }

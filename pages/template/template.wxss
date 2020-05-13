@@ -10,6 +10,9 @@
     justify-content: left;
     padding: 0 10rpx;
 }
+.header-title{
+    width: 100%;
+}
 .item-header-jd{
     display: flex;
     justify-content: center;
@@ -40,11 +43,21 @@
     font-size: 22rpx;
     color: #9e9e9e;
 }
+.header-src {
+    line-height: 36rpx;
+    font-size: 22rpx;
+    color: #9e9e9e;
+}
 .header-time-jd{
     text-align: center;
     line-height: 36rpx;
     font-size: 22rpx;
     color: #9e9e9e;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .item-body {
     padding: 20rpx 10rpx;
