@@ -87,6 +87,12 @@ Page({
                 break
         }
     },
+    previewImage(e) {
+        console.log(e)
+        wx.previewImage({
+            urls: [e.currentTarget.dataset.current]
+        })
+    },
     onLoad: function () {
         var self = this;
         // 获取系统信息

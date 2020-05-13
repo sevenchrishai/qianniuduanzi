@@ -40,7 +40,7 @@
 		</view>
 		<view class="item-body">
 			<view>{{item.text}}</view>
-			<image class="body-img" bindtap="previewImage" data-current="{{item.images || '../../images/404.png'}}"
+			<image class="body-img" bindtap="previewImage" data-current="{{item.images}}"
 				   src="{{item.images || '../../images/404.png'}}" lazy-load="true" mode="aspectFill"></image>
 		</view>
 		<block wx:if="{{item.top_comments_content}}">
@@ -109,7 +109,7 @@
 		</view>
 		<view class="item-body">
 			<view>{{item.text}}</view>
-			<image class="body-img" bindtap="previewImage" data-current="{{item.images || '../../images/404.png'}}"
+			<image class="body-img" bindtap="previewImage" data-current="{{item.images}}"
 				   wx:if="{{item.img}}" src="{{item.img || '../../images/404.png'}}" lazy-load="true" mode="aspectFill"></image>
 		</view>
 	</view>
@@ -129,7 +129,7 @@
 	<view class="list-item">
 		<view class="item-body">
 			<view>{{item.content}}</view>
-			<image class="body-img" bindtap="previewImage" data-current="{{item.images || '../../images/404.png'}}"
+			<image class="body-img" bindtap="previewImage" data-current="{{item.url}}"
 				   wx:if="{{item.url}}" src="{{item.url || '../../images/404.png'}}" lazy-load="true" mode="aspectFill"></image>
 		</view>
 	</view>
