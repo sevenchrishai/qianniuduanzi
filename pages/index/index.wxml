@@ -21,8 +21,6 @@
                      scroll-top='{{topNum}}'>
             <block wx:for="{{hotDataList}}" wx:key="sid">
                 <template wx:if="{{item.type=='text'}}" is="joke_tpl" data="{{item}}"/>
-            </block>
-            <block wx:for="{{hotDataList}}" wx:key="sid">
                 <template wx:if="{{item.type=='image' || item.type=='gif'}}" is="pic_tpl" data="{{item}}"/>
             </block>
             <!--<block wx:for="{{hotDataList}}" wx:key="sid">-->

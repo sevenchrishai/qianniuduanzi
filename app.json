@@ -37,6 +37,12 @@
         "text": "匹诺曹",
         "iconPath": "images/pic.png",
         "selectedIconPath": "images/pic-actived.png"
+      },
+      {
+        "pagePath": "pages/pic/pic",
+        "text": "皮卡丘",
+        "iconPath": "images/kaka.png",
+        "selectedIconPath": "images/kaka-actived.png"
       }
     ]
   },

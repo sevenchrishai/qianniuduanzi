@@ -5,6 +5,8 @@ const apiKey = app.globalData.JDApiKey
 const apiSign = app.globalData.JDshowapi_sign
 const api = require('../api/api.js')
 const jokeUrl = api.JDUrl + '/showapi/'//爬的别人的图片，然而做了防盗链，JD-GDX
+// https://way.jd.com/jisuapi/channel?appkey=846ff9e774b8cbbb29bf536d4a04b06d
+// https://way.jd.com/jisuapi/get?channel=娱乐&num=10&start=0&appkey=846ff9e774b8cbbb29bf536d4a04b06d
 
 Page({
     data: {
