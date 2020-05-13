@@ -89,48 +89,6 @@ Page({
                     currentTab: e.currentTarget.dataset.current,
                     type: self.data.typeArr[parseInt(e.currentTarget.dataset.current)]
                 })
-                switch (self.data.type) {
-                    case 'text':
-                        if (self.data.textDataList.length == 0) {
-                            self.setData({
-                                page: 1
-                            })
-                            self.requestData('textDataList');
-                        }
-                        break
-                    case 'image':
-                        if (self.data.imageDataList.length == 0) {
-                            self.setData({
-                                page: 1
-                            })
-                            self.requestData('imageDataList');
-                        }
-                        break
-                    case 'gif':
-                        if (self.data.gifDataList.length == 0) {
-                            self.setData({
-                                page: 1
-                            })
-                            self.requestData('gifDataList');
-                        }
-                        break
-                    case 'video':
-                        if (self.data.videoDataList.length == 0) {
-                            self.setData({
-                                page: 1
-                            })
-                            self.requestData('videoDataList');
-                        }
-                        break
-                    default:
-                        if (self.data.hotDataList.length == 0) {
-                            self.setData({
-                                page: 1
-                            })
-                            self.requestData('hotDataList');
-                        }
-                        break
-                }
             }
         }
     },
