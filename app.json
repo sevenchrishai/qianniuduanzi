@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/meizi/meizi",
     "pages/index/index",
     "pages/pic/pic",
     "pages/joke/joke",
@@ -39,7 +40,7 @@
         "selectedIconPath": "images/pic-actived.png"
       },
       {
-        "pagePath": "pages/pic/pic",
+        "pagePath": "pages/meizi/meizi",
         "text": "皮卡丘",
         "iconPath": "images/kaka.png",
         "selectedIconPath": "images/kaka-actived.png"

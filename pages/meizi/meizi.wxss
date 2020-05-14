@@ -1,0 +1,6 @@
+.body-img{
+    height: auto;
+}
+.body{
+    background: black;
+}

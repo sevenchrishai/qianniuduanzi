@@ -151,3 +151,13 @@
         </view>
     </view>
 </template>
+
+<!-- GANK妹子图 -->
+<template name="GANK_pic_tpl">
+    <view class="list-pic-item">
+		<image class="body-img" bindtap="previewImage" data-current="{{item.url}}"
+			   wx:if="{{item.url}}" src="{{item.url || '../../images/404.png'}}" lazy-load="true" mode="widthFix"></image>
+		<view class="body-pic-desc">{{item.desc}}</view>
+		<view class="body-pic-date">{{item.createdAt}}</view>
+    </view>
+</template>

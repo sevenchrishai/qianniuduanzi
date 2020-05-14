@@ -86,3 +86,13 @@
     height: auto;
     background-color: #eee;
 }
+.list-pic-item{
+    background-color: black;
+    padding-top: 60rpx;
+}
+.body-pic-desc{
+    color: white;
+}
+.body-pic-date{
+    color: white;
+}
