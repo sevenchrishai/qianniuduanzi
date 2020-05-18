@@ -1,11 +1,5 @@
-<view class="my-box">
-	<view class="my-header">
-		<text>{{name}}</text>
-	</view>
-	<view class="my-body">
-		<image class="body-img" src="{{pic_url}}"></image>
-	</view>
-	<view class="my-footer">
-		<text>{{github}}</text>
-	</view>
+<import src="../template/template.wxml"/>
+<!-- 妹子日历 -->
+<view class="body">
+	<template is="GANK_pic_tpl" data="{{item}}" wx:for="{{dataList}}" wx:key="_id"/>
 </view>

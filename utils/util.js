@@ -15,6 +15,13 @@ function formatNumber(n) {
     return n[1] ? n : '0' + n
 }
 
+function formatTimeMonthYear(date) {
+    let newDate = new Date(date)
+    let day = newDate.getDate()
+    let monthYear = `${newDate.getMonth() + 1}月, ${newDate.getFullYear()}`
+    return [day, monthYear]
+}
+
 const wxRequest = function (url, method, params, callBack) {
     wx.showLoading({
         title: '加载中',
@@ -47,5 +54,6 @@ const wxRequest = function (url, method, params, callBack) {
 
 module.exports = {
     formatTime: formatTime,
-    wxRequest: wxRequest
+    wxRequest: wxRequest,
+    formatTimeMonthYear: formatTimeMonthYear
 }

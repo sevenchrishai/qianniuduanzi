@@ -88,11 +88,39 @@
 }
 .list-pic-item{
     background-color: black;
-    padding-top: 60rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    position: relative;
+    width: 100%;
 }
 .body-pic-desc{
     color: white;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    line-height: 1.5;
+    font-size: 26rpx;
+    width: 100%;
+    padding: 20rpx;
+    box-sizing: border-box; /*解决边距超过宽度问题*/
+    text-indent: 54rpx;
 }
 .body-pic-date{
     color: white;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 80rpx;
+    padding: 20rpx;
+    flex-direction: column;
+}
+.span-date{
+    font-size: 64rpx;
+    text-align: center;
+}
+.span-month{
+    font-size: 18rpx;
 }

@@ -3,4 +3,14 @@
 }
 .body{
     background: black;
+    position: relative;
+}
+.moreBtn{
+    color: white;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 20rpx;
+    padding: 20rpx;
+    font-size: 28rpx;
 }

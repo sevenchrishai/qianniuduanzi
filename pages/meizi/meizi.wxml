@@ -1,5 +1,6 @@
 <import src="../template/template.wxml"/>
 <!-- 妹子日历 -->
 <view class="body">
-	<template is="GANK_pic_tpl" data="{{item}}" wx:for="{{dataList}}" wx:key="_id"/>
+	<template is="GANK_pic_tpl" data="{{item}}" wx:if="{{index == 0}}" wx:for="{{dataList}}" wx:key="_id"/>
+	<view class="moreBtn" bindtap="moreBtn">MORE</view>
 </view>

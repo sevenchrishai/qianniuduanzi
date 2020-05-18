@@ -54,6 +54,16 @@
 	</view>
 </template>
 
+<!-- 404 -->
+<template name="pic_404_tpl">
+	<view class="list-item">
+		<view class="item-body">
+			<view>推荐的视频不见了~</view>
+			<image class="body-img" src="{{'../../images/404.png'}}" mode="aspectFill"></image>
+		</view>
+	</view>
+</template>
+
 <!-- 视频 -->
 <!--
 <template name="video_tpl">
@@ -155,9 +165,12 @@
 <!-- GANK妹子图 -->
 <template name="GANK_pic_tpl">
     <view class="list-pic-item">
-		<image class="body-img" bindtap="previewImage" data-current="{{item.url}}"
+		<image class="body-img body-img-meizi" bindtap="previewImage" data-current="{{item.url}}"
 			   wx:if="{{item.url}}" src="{{item.url || '../../images/404.png'}}" lazy-load="true" mode="widthFix"></image>
 		<view class="body-pic-desc">{{item.desc}}</view>
-		<view class="body-pic-date">{{item.createdAt}}</view>
+		<view class="body-pic-date">
+			<view class="span-date">{{item.date}}</view>
+			<view class="span-month">{{item.monthYear}}</view>
+		</view>
     </view>
 </template>
