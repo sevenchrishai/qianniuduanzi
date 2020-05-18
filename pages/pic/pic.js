@@ -171,7 +171,7 @@ Page({
                 });
             }
         });
-        self.requestChannelData();
-        self.requestData();
+        // self.requestChannelData();
+        // self.requestData();
     }
 })
