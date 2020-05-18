@@ -28,12 +28,6 @@
         "selectedIconPath": "images/duanzi-actived.png"
       },
       {
-        "pagePath": "pages/pic/pic",
-        "text": "阿童木",
-        "iconPath": "images/mumu.png",
-        "selectedIconPath": "images/mumu-actived.png"
-      },
-      {
         "pagePath": "pages/joke/joke",
         "text": "匹诺曹",
         "iconPath": "images/pic.png",
