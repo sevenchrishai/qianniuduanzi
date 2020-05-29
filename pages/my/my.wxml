@@ -1,5 +1,5 @@
 <import src="../template/template.wxml"/>
-<!-- 妹子日历 -->
+<!-- 妹子日历 MORE-->
 <view class="body">
 	<template is="GANK_pic_tpl" data="{{item}}" wx:for="{{dataList}}" wx:key="_id"/>
 </view>

@@ -1,4 +1,6 @@
-<!-- 收藏 -->
+<!-- 美团饿了么优惠券页面 -->
 <view>
-	<text>{{dec}}</text>
+	<view>{{activityContent}}</view>
+	<view>{{meituanContent}}</view>
+	<view>{{elmeContent}}</view>
 </view>

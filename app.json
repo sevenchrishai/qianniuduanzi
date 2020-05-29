@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/collection/collection",
     "pages/meizi/meizi",
     "pages/index/index",
     "pages/pic/pic",
     "pages/joke/joke",
-    "pages/collection/collection",
     "pages/my/my",
     "pages/duanzi/duanzi"
   ],
@@ -38,6 +38,12 @@
         "text": "皮卡丘",
         "iconPath": "images/kaka.png",
         "selectedIconPath": "images/kaka-actived.png"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "优惠券",
+        "iconPath": "images/duanzi.png",
+        "selectedIconPath": "images/duanzi-actived.png"
       }
     ]
   },
