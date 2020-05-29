@@ -19,12 +19,11 @@ App({
             header: {'Content-Type': 'application/json'},
             success(res) {
                 wx.hideLoading()
-                console.log('request success', res)
                 callback(res)
             },
             fail(e) {
                 wx.hideLoading()
-                console.log('request fail', e)
+                console.log(e)
                 wx.showToast({
                     title: '加载错误',
                     icon: 'none',

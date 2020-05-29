@@ -12,8 +12,8 @@ Page({
         winHeight: 0,
         // tab切换
         currentTab: 0,
-        type: '',
-        typeArr: ['','text','image','gif','video'],
+        type: 'text',
+        typeArr: ['text','image','gif','video'],
         page: 1,
         pageSize: 10,
         hotDataList: [],
@@ -237,6 +237,6 @@ Page({
         });
         // https://api.apiopen.top/getJoke?page=1&count=2&type=video
         // https://api.apiopen.top/getSingleJoke?sid=28654780
-        self.requestData('hotDataList');
+        self.requestData('textDataList');
     }
 }) 
