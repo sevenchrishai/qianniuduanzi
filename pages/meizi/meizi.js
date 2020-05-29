@@ -5,7 +5,9 @@ const util = require('../../utils/util.js')
 const meiziListUrl = api.GANKUrl;
 Page({
     data: {
+        winHeight: 0,
         dataList: [],
+        firstData: null,
         page: 1,
         pageSize: 10
     },
@@ -20,7 +22,8 @@ Page({
                     item.monthYear = util.formatTimeMonthYear(item.createdAt)[1]
                 })
                 self.setData({
-                    dataList: res.data.data
+                    dataList: res.data.data,
+                    firstData: res.data.data && res.data.data.length ? res.data.data[0] : null
                 })
             }
         })
@@ -44,6 +47,15 @@ Page({
     },
     onLoad() {
         let self = this;
+        // 获取系统信息
+        // 高度自适应
+        wx.getSystemInfo({
+            success: function (res) {
+                self.setData({
+                    winHeight: res.windowHeight
+                });
+            }
+        });
         self.requestData();
     }
 })

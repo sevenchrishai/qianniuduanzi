@@ -1,6 +1,15 @@
 <import src="../template/template.wxml"/>
 <!-- 妹子日历 -->
 <view class="body">
-	<template is="GANK_pic_tpl" data="{{item}}" wx:if="{{index == 0}}" wx:for="{{dataList}}" wx:key="_id"/>
+	<view class="list-pic-item">
+		<image class="body-img" bindtap="previewImage" data-current="{{firstData.url}}"
+			   wx:if="{{firstData.url}}" src="{{firstData.url || '../../images/404.png'}}" lazy-load="true"
+			   mode="aspectFit" style="height:{{winHeight-21}}px"></image>
+		<view class="body-pic-desc">{{firstData.desc}}</view>
+		<view class="body-pic-date">
+			<view class="span-date">{{firstData.date}}</view>
+			<view class="span-month">{{firstData.monthYear}}</view>
+		</view>
+	</view>
 	<view class="moreBtn" bindtap="moreBtn">MORE</view>
 </view>
