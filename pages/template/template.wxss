@@ -19,11 +19,12 @@
     padding: 0 10rpx;
 }
 .header-img {
+    margin-right: 10rpx;
+}
+.header-img image{
     width: 80rpx;
     height: 80rpx;
-    border-radius: 80px;
-    overflow: hidden;
-    margin-right: 10rpx;
+    border-radius: 80rpx;
 }
 .header-name {
     line-height: 36rpx;
