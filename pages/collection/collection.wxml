@@ -1,38 +1,13 @@
 <!-- 美团饿了么优惠券页面 -->
 <view class="quan-body">
-	<view class="six-box">
-		<view class="text-box">
-			<text>
-				<text class="bold red">618快要到啦~\n</text>
-				每天都可以领红包哦~\n
-				【淘宝618】红包：复制这条口令，到【手机淘宝】\n
-				<text selectable="true" class="red">$LhYa1rtUB3u$</text>\n
-				【京东618】红包：复制这条口令，到【京东】APP\n
-				<text selectable="true" class="red">￥vAZbYAvBaa%</text>\n
-				* 每天可领三次哦 *
-			</text>
-		</view>
-		<view class="btn-box">
-			<button type="primary" size="mini" plain="true" bindtap="copyText" data-current="tb">点我复制淘宝口令</button>
-			<button type="primary" size="mini" plain="true" bindtap="copyText" data-current="jd">点我复制京东口令</button>\n
-		</view>
-		<view class="center">
-			<image src="../../images/mouse-line.png" mode="widthFix"></image>
-		</view>
-	</view>
 	<view class="meituan-box">
 		<view class="text-box">
 			<text>
 				<text class="bold red">【美团外卖券】</text>\n
-				复制链接进入浏览器或微信打开领取\n
-				<text selectable="true" class="underline">http://tb.v2b3.com/3LV6E</text>\n
-				也可直接点击图片扫码领取\n
+				可直接点击图片扫码领取\n
 				<text class="tips">tips：图片可发送至'文件传输助手'保存，扫码直入~</text>\n
 				* 可每天领一次
 			</text>
-		</view>
-		<view class="btn-box">
-			<button type="primary" size="mini" plain="true" bindtap="copyText" data-current="mt">点我复制美团链接</button>
 		</view>
 		<view class="center">
 			<image bindtap="previewImage" src="https://pic.downk.cc/item/5ed1f6e8c2a9a83be53487a7.jpg"
@@ -47,14 +22,9 @@
 		<view class="text-box">
 			<text>
 				<text class="bold red">【饿了么外卖券】</text>\n
-				复制这条口令，到【手机淘宝】\n
-				<text selectable="true" class="red">$Qpia1pmUz9y$</text>\n
-				也可直接点击图片扫码领取\n
+				可直接点击图片扫码领取\n
 				* 可每天领一次
 			</text>
-		</view>
-		<view class="btn-box">
-			<button type="primary" size="mini" plain="true" bindtap="copyText" data-current="ele">点我复制饿了么口令</button>
 		</view>
 		<view class="center">
 			<image bindtap="previewImage" src="https://pic.downk.cc/item/5ed1f63bc2a9a83be533b743.jpg"
