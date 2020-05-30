@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/collection/collection",
-    "pages/meizi/meizi",
     "pages/index/index",
     "pages/pic/pic",
+    "pages/meizi/meizi",
+    "pages/collection/collection",
     "pages/joke/joke",
     "pages/my/my",
     "pages/duanzi/duanzi"
@@ -23,27 +23,27 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "葫芦娃",
+        "text": "内涵段子",
         "iconPath": "images/duanzi.png",
         "selectedIconPath": "images/duanzi-actived.png"
       },
       {
         "pagePath": "pages/joke/joke",
-        "text": "匹诺曹",
+        "text": "喷饭笑话",
         "iconPath": "images/pic.png",
         "selectedIconPath": "images/pic-actived.png"
       },
       {
         "pagePath": "pages/meizi/meizi",
-        "text": "皮卡丘",
+        "text": "妹纸心情",
         "iconPath": "images/kaka.png",
         "selectedIconPath": "images/kaka-actived.png"
       },
       {
         "pagePath": "pages/collection/collection",
-        "text": "优惠券",
-        "iconPath": "images/duanzi.png",
-        "selectedIconPath": "images/duanzi-actived.png"
+        "text": "每日福利",
+        "iconPath": "images/youhuiquan.png",
+        "selectedIconPath": "images/youhuiquan.png"
       }
     ]
   },

@@ -1,0 +1,35 @@
+.quan-body{
+  background-color: #FFFFFF;
+}
+.text-box{
+  text-align: center;
+  color: #797baa;
+  padding: 30rpx;
+  font-size: 15px;
+  line-height: 1em;
+}
+.btn-box{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+.center{
+  text-align: center;
+}
+.about{
+  padding-bottom: 20rpx;
+}
+.tips{
+  font-size: 12px;
+  color: hotpink;
+}
+.red{
+  color: #f00;
+}
+.bold{
+  font-weight: bold;
+  font-size: 16px;
+}
+.underline{
+  text-decoration: underline;
+}
