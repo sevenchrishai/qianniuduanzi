@@ -9,10 +9,7 @@
 				<text selectable="true" class="red">$LhYa1rtUB3u$</text>\n
 				【京东618】红包：复制这条口令，到【京东】APP\n
 				<text selectable="true" class="red">￥vAZbYAvBaa%</text>\n
-				也可复制链接领取(长按哦)：\n
-				<text selectable="true" class="underline">https://u.jd.com/kHOszW</text>\n
-				* 每天可领三次哦\n
-				ps. 听说第一天领的都是大红包哦~
+				* 每天可领三次哦 *
 			</text>
 		</view>
 		<view class="btn-box">
@@ -27,7 +24,7 @@
 		<view class="text-box">
 			<text>
 				<text class="bold red">【美团外卖券】</text>\n
-				复制链接进入浏览器或微信打开领取(长按哦)\n
+				复制链接进入浏览器或微信打开领取\n
 				<text selectable="true" class="underline">http://tb.v2b3.com/3LV6E</text>\n
 				也可直接点击图片扫码领取\n
 				<text class="tips">tips：图片可发送至'文件传输助手'保存，扫码直入~</text>\n
@@ -69,6 +66,9 @@
 		<image src="../../images/gongzhonghao.gif" mode="widthFix"></image>
 	</view>
 	<view class="about center">
-		<text selectable="true" class="tips">tips：搜索公众号“外卖优惠小券券”找我聊天~</text>
+		<text selectable="true" class="tips">
+			看到最后啦~ 比心心~\n
+			tips：搜索公众号“外卖优惠小券券”找我聊天~
+		</text>
 	</view>
 </view>
